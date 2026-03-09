@@ -47,15 +47,16 @@ See [the user guide](./USER_GUIDE.md) for instructions. For project scope, see [
 - Spurious A/B button events during D-pad use are suppressed to prevent unwanted page turns.
 
 ### Broader Device Compatibility
-- **Any GameBrick controller** (not just a specific unit) can now connect and work out-of-the-box.
-- **Mini_Keyboard devices are also supported.**
+- **Any GameBrick controller** (not just a specific unit) can now connect and work out-of-the-box. Please make sure it is in slow blink mode, not the pairing mode/fast flash.
+- **Mini_Keyboard devices are also supported.** Mini_Keyboard is what the Gugxiom 2 Key Keypad from Amazon
 - Standard HID arrow keys and page up/down keys are mapped to navigation actions.
-- **Profile auto-detection:** The system matches known device profiles (GameBrick, Mini_Keyboard) by MAC address and device name, but will also fall back to auto-detection for unknown but compatible devices.
+- **Profile auto-detection:** The system matches known device profiles (GameBrick, Mini_Keyboard) by MAC address and device name, but will also fall back to auto-detection for unknown but compatible devices. I have no other page turners at this time to test with. It is coded to connect to any HID device but the device buttons may not be mapped to the generic codes or those for the two devices that are know to the firmware. 
 
 ### How to Use
 1. Go to **Settings → Bluetooth** and enable Bluetooth.
 2. Scan for devices and connect your GameBrick or Mini_Keyboard.
 3. Use the D-pad or arrow keys to turn pages and navigate menus.
+4. open a book, open the options (select button) and navigate to Bluetooth. works the same as the main menu settings.
 
 ### Technical Improvements
 - Per-button cooldown logic prevents repeated/rapid accidental presses.
